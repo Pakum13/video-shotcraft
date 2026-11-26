@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viajecillo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><span class="logo">🧭</span><div><b>Viajecillo</b><small>Práctica</small></div></header>
+<main>
+  <h1 id="title"></h1>
+  <div class="search">
+    <input id="q" type="text" placeholder="Busca un país…" autocomplete="off" spellcheck="false" autofocus>
+    <ul id="list" hidden></ul>
+  </div>
+  <div id="stats"></div>
+  <div class="mapbox">
+    <div id="win" hidden>
+      <p><b>Ruta completada:</b> <span id="winRoute"></span></p>
+      <p id="winMsg"></p>
+      <button id="again" class="primary">Juega otra partida</button>
+    </div>
+    <svg id="map" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
+    <div id="tip" hidden></div>
+  </div>
+  <div class="actions">
+    <button id="hint">💡 Pista</button>
+    <button id="giveup">Rendirme</button>
+    <button id="reset">Nueva ruta</button>
+  </div>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
